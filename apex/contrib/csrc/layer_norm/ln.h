@@ -40,6 +40,7 @@ struct FwdParams{
         , workspace(nullptr)
         , barrier(nullptr)
         , epsilon(0.f)
+        , is_rms_only(false)
     {
     }
 
@@ -66,6 +67,9 @@ struct FwdParams{
 
     // Output of LN FWD.
     float epsilon;
+
+    //Indicates whether it is RMSnorm or not
+    bool is_rms_only;
 };
 
 ////////////////////////////////////////////////////////////////////////////////////////////////////
